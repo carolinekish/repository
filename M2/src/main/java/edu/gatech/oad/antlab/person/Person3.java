@@ -43,6 +43,12 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+	  char[] charArray = input.toCharArray();
+	  for (int i = 0; i < charArray.length / 2; i++) {
+	      char temp = charArray[i];
+	      charArray[i] = charArray[charArray.length - 1 -i];
+	      charArray[charArray.length - 1 - i] = temp;
+	  }
+	  return new String(charArray);
 	}
 }
