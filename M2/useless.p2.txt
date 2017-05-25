@@ -1,1 +1,2 @@
-more useless info to delete
+name = Rahul Viraj Brahmal
+email: rbrahmal3@gatech.edu
