@@ -1,9 +1,12 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
- *  modified string 
+ *  modified string
  *
  * @author Bob
  * @version 1.1
@@ -30,15 +33,15 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+      //Person 2 put your implementation here
+      return null;
 	}
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
