@@ -40,7 +40,6 @@ public class Person2 {
       }
 
       String randomString = new String(charArr);
-      System.out.println(randomString);
 
       return randomString;
 
