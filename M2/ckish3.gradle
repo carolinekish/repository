@@ -15,3 +15,7 @@ jar {
         'Class-Path': '../../lib/resources.jar'
     }
 }
+
+repositories {
+    mavenCentral()
+}
