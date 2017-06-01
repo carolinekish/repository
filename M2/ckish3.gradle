@@ -1,14 +1,17 @@
-//default task is to make a jar file
-defaultTasks 'jar'
-
 apply plugin: 'java'
 
-//configure jar task
-jar  {
-  manifest.attributes 'Main-Class' :'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path': '../../lib/resources.jar'
-
-}
+defaultTasks 'jar'
 
 dependencies {
     compile files("lib/resources.jar")
+}
+
+jar {
+
+    manifest {
+        attributes 'Implementation-Title': 'M2',
+        'Implementation-Version': '1.0',
+        'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+        'Class-Path': '../../lib/resources.jar'
+    }
 }
