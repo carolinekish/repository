@@ -1,0 +1,20 @@
+//default is jar if no task is designated when running gradle
+defaultTasks "jar"
+
+//apply java plugin
+apply plugin: "java"
+
+//configure jar task
+jar {
+    manifest {
+        attributes(
+            "Main-Class": "edu.gatech.oad.antlab.pkg1.AntLabMain",
+            "Class-Path": "../../lib/resources.jar"
+        )
+    }
+}
+
+//sets dependency
+dependencies {
+    compile files("lib/resources.jar")
+}
