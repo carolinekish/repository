@@ -1,10 +1,17 @@
-//default is jar if no task is designated when running gradle
+//sets default to jar if no task is designated when running gradle
 defaultTasks "jar"
 
-//apply java plugin
+//applies java plugin
 apply plugin: "java"
 
-//configure jar task
+//sets dependency
+//currently in M2 directory
+dependencies {
+    compile files("lib/resources.jar")
+}
+
+//configures jar task / manifest
+//currently in java directory
 jar {
     manifest {
         attributes(
@@ -14,7 +21,7 @@ jar {
     }
 }
 
-//sets dependency
-dependencies {
-    compile files("lib/resources.jar")
+//tells gradle this is a repository
+repositories {
+    mavenCentral()
 }
